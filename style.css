@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	font-family: 'PT Sans';
+}
+.card{
+	height: 500px;
+	width: 340px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:  1%;
+	border-radius: 20px;
+	box-shadow: 0 0 20px #5e17eb;
+	font-family: 'PT Sans';
+}
+.card-main{
+	background-color: pink;
+	height: 100% !important;
+	background-image: url(./birstall.png);
+	background-position: all;
+	background-size: cover;
+	font-family: 'PT Sans';
+}
+.info{
+    width: 100%;
+   	height: 100%;
+}
+.temp{
+	font-size: 50px;
+	font-weight: bold;
+}
+.info-box{
+	width: 100%;
+    height: 100%;
+   	color:  #fff;
+}
+.card-bottom{
+	font-family: 'PT Sans';
+	background-color: #5E17EB;
+	box-shadow: 0 0 20px #5e17eb;
+}
+.card-top{
+	font-size: 15px;
+	padding: 10px;
+}
+.card-body{
+	text-align: center;
+	margin-top: 30%;
+}
+.weather-type{
+	color: white;
+	font-size: 20px;
+	margin-top: -10px;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+.temperature{
+	margin-top: 166px;
+	font-size: 40px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.footer-info{
+	color:  white;
+	padding: 20px;
+}
+.more-info{
+	margin-left: 10px;
+}

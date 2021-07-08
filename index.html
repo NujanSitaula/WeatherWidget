@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Birstall - Weather Info</title>
+</head>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<body>
+	<div class="location-search" style="display: none;"></div>
+	<div class="card">
+		<div class="card-main">
+			<div class="info">
+			<div class="info-box">
+			<div class="card-top">
+				<i class="bi" style="color: #fff; font-size: 20px; margin-right: 3px;"></i>
+				<label class="city-name" id="CityName"></label>
+			<label class="country-info" id="CountryInfo"></label>
+			</div>
+			<div class="card-body">
+				<i class="bi" style="color: white; font-size: 90px;" id="WeatherIcon"></i>
+				<p class="weather-type" id="WeatherType" style="text-transform: uppercase;"></p>
+			</div>
+			<div class="temperature">
+				<label class="weather-temperature" id="TemperatureValue" onclick="checking()" style="cursor: pointer;"></label><label style="font-size: 15px; margin-left: 10px; font-weight: normal;">Feels Like:</label><label style="font-size: 15px; margin-left: 10px; font-weight: normal;" id="FeelsLikeValue"></label><label style="font-size: 15px; font-weight: normal;">°C</label>
+			</div>
+			</div>
+			</div>
+		</div>
+		<div class="card-bottom">
+			<div class="footer-info">
+			<span class="more-info"><i class="bi bi-moisture"></i><label id="HumidityLevel" style="margin-left: 5px;"></label><label>%</label></span>
+			<span class="more-info"><i class="bi bi-wind"></i><label id="WindSpeed" style="margin-left: 5px;"></label><label>Kmph</label></span>
+			<span class="more-info"><i class="bi bi-thermometer-low"></i><label id="TempLevelLow" style="margin-left: 5px;"></label><label>°C</label></span>
+			<span class="more-info"><i class="bi bi-thermometer-high"></i><label id="TempLevelHigh" style="margin-left: 5px;"></label><label>°C</label></span>
+			</div>
+		</div>
+	</div>
+	 <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
