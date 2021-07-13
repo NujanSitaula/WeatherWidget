@@ -1,5 +1,6 @@
 /**
  * Name: Nujan Sitaula
+ * College ID: NP03CS4S210234
  * URL: https://nujan.com.np
  * 
  * */
@@ -7,9 +8,10 @@
 function weathers(){
 	fetch(
 
-		"https://api.openweathermap.org/data/2.5/weather?q=Kathmandu&appid=0de6fc00abc79dc9398e8181bd49765c"
+		"https://api.openweathermap.org/data/2.5/weather?q=Birstall&appid=0de6fc00abc79dc9398e8181bd49765c"
 
-		)
+		)//Calling API 
+
 	.then((result) => result.json()) //Fetching Data From Json API.
 	.then((result) => {
 		const WeatherDetails = result["weather"][0]["description"];
@@ -46,7 +48,7 @@ function weathers(){
 
 		//Converting Calvin to Celcious
 
-		TempCelcious = parseInt((TemperatureValue - 273.15));
+		TempCelcious = parseInt((TemperatureValue - 273.15)); //Using parseInt() to remove values after decimal.
 
 		LowTemp = parseInt((MinTemp - 273.15));
 
@@ -54,7 +56,7 @@ function weathers(){
 
 		FeelsLikeCelcious = parseInt((FeelsLike - 273.15));
 
-		//Inserting Values To HTML
+		//Inserting Values To HTML File
 
 		document.getElementById("TemperatureValue").innerHTML = TempCelcious + "°C";
 
@@ -77,13 +79,13 @@ function weathers(){
 	});
 
 }
-weathers(); //Calling Function
+weathers(); //Calling Function weather();
 
 //Converting Degree Celcious to Farhnite
 
 function checking(){
 	FerValue = parseInt(TempCelcious * 1.800 + 32);
-    var Conversion =document.getElementById("TemperatureValue").innerHTML;
+    var Conversion = document.getElementById("TemperatureValue").innerHTML;
     var Converting = Conversion.split("°");
     if (Converting[1] == "C"){
     	document.getElementById("TemperatureValue").innerHTML = FerValue + "°F";
